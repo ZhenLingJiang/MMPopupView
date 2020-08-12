@@ -310,7 +310,8 @@ static const void *mm_dimBackgroundBlurEffectStyleKey = &mm_dimBackgroundBlurEff
     
     if ( self.mm_dimReferenceCount > 0 )
     {
-        return;
+//        return;
+        self.mm_dimReferenceCount = 0;
     }
     
     self.mm_dimBackgroundAnimating = YES;
